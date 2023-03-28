@@ -1,0 +1,106 @@
+/* TroubleshootComponent's private CSS styles */
+.text_area_style {
+  resize: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: 17px;
+  font-weight: 400;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text_area_form {
+  height: 93vh !important;
+  width: 58vw !important;
+  margin-top: 2rem;
+}
+
+.outline {
+  border-radius: 10px;
+}
+
+.p_style {
+  font-size: 2vh;
+  margin-top: 2rem;
+}
+
+.text_area_block {
+  text-align: center;
+  margin-right: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_area_row {
+  display: flex;
+}
+
+.button_style {
+  text-align: center;
+  font-size: calc(4px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  /*transform: translate(260%,740%);*/
+
+}
+
+.buttons {
+  margin-left: 52%;
+}
+
+.submit {
+  //background-color: #1E90FF;
+  color: white;
+}
+
+.i_style {
+  margin-right: 1rem;
+}
+
+.block {
+  display:flex;
+
+  transform: translateY(-3.5%);
+}
+
+.center_console {
+  width: 20vw;
+  height: 55vh;
+  transform: translateY(4%);
+}
+
+.input_style {
+  margin-left: 1rem;
+  font-size: 15px;
+  width: 20vw;
+  height: 4vh;
+  transform: translateY(30%);
+}
+
+.collection {
+  transform: translateY(7%);
+}
+
+.form_sheet {
+  height: 90.9vh;
+  width: 36.3vw;
+  display: flow;
+  margin-top: 2rem;
+}
+
+.form_container {
+  margin-left: 1rem;
+  text-align: left;
+  height: 5vh;
+  width: 7vw;
+}
+
+.outside_input_form {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 5vh !important;
+  width: 30vw !important;
+}
+
+

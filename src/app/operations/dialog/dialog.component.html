@@ -1,0 +1,41 @@
+<h1 mat-dialog-title class="dialog-title">
+  <mat-icon class="title-icon">info</mat-icon>
+  Dialog Title
+</h1>
+<mat-dialog-content class="title-dialog-content">
+  <!-- <fab-loading-spinner *ngIf="loading"></fab-loading-spinner>
+  <div *ngIf="pageState === pageState.initial"> -->
+  <div>
+    <form [formGroup]="form" id="form">
+      <!-- ID -->
+      <span class="dialog-label">Id: </span>
+      <div class="dialog-content">
+        <mat-form-field class="fieldWidth">
+          <label for="search-id" class="noDisplay"></label>
+          <input matInput formControlName="id" id="search-id"/>
+          <mat-hint align="end">{{form.value.id.value.length || 0}}/12</mat-hint>
+          <mat-error *ngIf="form.value.id.error?.required">Id is required</mat-error>
+        </mat-form-field>
+      <!--  <span *ngIf="form.controls.id.invalid" style="color: #D2232B"> *</span> -->
+      </div>
+      <!-- NAME -->
+      <span class="dialog-label">Name: </span>
+      <div class="dialog-content">
+        <mat-form-field class="fieldWidth">
+          <label for="search-name" class="noDisplay"></label>
+          <input matInput formControlName="name" id="search-name"/>
+        </mat-form-field>
+      </div>
+    </form>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-raised-button (click)="closeDialog(false)"
+          (keypress)="$event.preventDefault();keypressFunctionWrapper($event, closeDialog.bind(this),[false])">
+    Cancel
+  </button>
+  <button mat-raised-button (click)="closeDialog(true)" color="primary"
+          (keypress)="$event.preventDefault();keypressFunctionWrapper($event, closeDialog.bind(this),[true])">
+    Create
+  </button>
+</mat-dialog-actions>

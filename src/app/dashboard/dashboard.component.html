@@ -1,0 +1,137 @@
+<div class="block">
+  <div class="text_area_row">
+
+    <div class="text_area_block">
+      <div class="block">
+        <!-- <p class="p_style">DIIS Request</p> -->
+        <mat-form-field appearance="outline" class="outside_input_form">
+          <mat-label>DIIS Request</mat-label>
+          <mat-select class="select_style">
+            <mat-option *ngFor="let drOption of diisRequestSelectOptions" [value]="drOption">{{drOption}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <mat-form-field class="text_area_form" appearance="outline">
+        <textarea class="text_area_style" name="diisRequest" cols="60" rows="4" matInput></textarea>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <button class="button_style outside_button" mat-raised-button>
+        <i class='fas fa-chevron-up i_style'></i>
+        <span>Convert NIIS</span>
+      </button>
+      <button class="button_style outside_button" mat-raised-button>
+        <i class='fas fa-chevron-down i_style'></i>
+        <span>Convert DIIS</span>
+      </button>
+    </div>
+
+    <div class="text_area_block">
+      <div class="block">
+        <mat-form-field appearance="outline" class="outside_input_form">
+          <mat-label>NIIS Json Request</mat-label>
+          <mat-select class="select_style">
+            <mat-option *ngFor="let drOption of diisRequestSelectOptions" [value]="drOption">{{drOption}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <mat-form-field class="text_area_form" appearance="outline">
+        <textarea class="text_area_style" name="niisRequest" cols="60" rows="4" matInput></textarea>
+      </mat-form-field>
+    </div>
+
+  </div>
+
+  <div class="center_console_section text_area_row">
+
+    <div>
+      <button class="button_style center_button top_button" mat-raised-button>
+        <i class='fas fa-chevron-right i_style'></i>
+        <span>Submit to DIIS Through NIIS</span>
+      </button>
+    </div>
+    <div>
+      <button class="button_style center_button top_button_bottom" mat-raised-button>
+        <i class='fas fa-chevron-right i_style'></i>
+        <span>Submit to DIIS Host</span>
+      </button>
+    </div>
+
+    <div class="mat-elevation-z2 center_console">
+      <div class=" center_console_div">
+        <h2 class="header_style">DIIS</h2>
+        <mat-form-field appearance="outline" class="center_input_form">
+          <mat-label>DIIS Host</mat-label>
+          <mat-select class="select_style">
+            <mat-option *ngFor="let drOption of diisRequestSelectOptions" [value]="drOption">{{drOption}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <div>
+          <mat-form-field appearance="outline" class="center_input_form">
+            <mat-label>DIIS Port</mat-label>
+            <input matInput placeholder="" value="">
+          </mat-form-field>
+        </div>
+        <h2 class="header_style">NIIS</h2>
+        <div>
+          <mat-form-field appearance="outline" class="center_input_form">
+            <mat-label>NIIS Host</mat-label>
+            <mat-select class="select_style">
+              <mat-option *ngFor="let drOption of diisRequestSelectOptions" [value]="drOption">{{drOption}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+
+    <button class="button_style center_button bottom_button" mat-raised-button>
+      <i class='fas fa-chevron-right i_style'></i>
+      <span>Submit to NIIS Service</span>
+    </button>
+
+  </div>
+
+  <div class="text_area_row">
+
+    <div class="text_area_block">
+      <div class="block">
+        <mat-form-field appearance="outline" class="outside_input_form">
+          <mat-label>DIIS Response</mat-label>
+          <mat-select class="select_style">
+            <mat-option *ngFor="let drOption of diisRequestSelectOptions" [value]="drOption">{{drOption}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <mat-form-field class="text_area_form" appearance="outline">
+        <textarea class="text_area_style" name="diisRequest" cols="60" rows="4" matInput></textarea>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <button class="button_style outside_button" mat-raised-button>
+        <i class='fas fa-chevron-up i_style'></i>
+        <span>Convert NIIS</span>
+      </button>
+      <button class="button_style outside_button" mat-raised-button>
+        <i class='fas fa-chevron-down i_style'></i>
+        <span>Convert DIIS</span>
+      </button>
+    </div>
+
+    <div class="text_area_block">
+      <div class="block">
+        <mat-form-field appearance="outline" class="outside_input_form">
+          <mat-label>NIIS Json Response</mat-label>
+          <mat-select class="select_style">
+            <mat-option *ngFor="let drOption of diisRequestSelectOptions" [value]="drOption">{{drOption}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <mat-form-field class="text_area_form" appearance="outline">
+        <textarea class="text_area_style" name="diisRequest" cols="60" rows="4" matInput></textarea>
+      </mat-form-field>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,120 @@
+/* OperationComponent's private CSS styles */
+
+.input_form {
+  height: 7.5vh !important;
+  width: 32vw !important;
+}
+
+.input_size {
+  height: 2vh !important;
+  width: 27.5vw !important;
+}
+
+.form_inputs {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  width: 28vw;
+}
+
+.form_buttons {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  width: 28vw;
+  transform: translateX(23.4%);
+}
+
+.outline {
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #cccccc;
+}
+
+.input_section {
+  display: flex;
+  margin-top: 1rem;
+  width: 49vw;
+  border-radius: 15px;
+  /*
+  border-style: solid;
+  border-width: 3px;
+  border-color: #EEEEEE;
+  border-radius: 15px;
+   */
+}
+
+.button_style {
+  text-align: center;
+  font-size: calc(2px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  height: 5.2vh;
+  width: 13.5vw;
+  color: white !important;
+  background-color: yellowgreen !important;
+}
+
+.text_area_style {
+  resize: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 100%;
+  max-height: 100%;
+  /*font-size-adjust: auto;*/
+}
+
+.table_sec_right{
+  transform: translateY(-41%)
+}
+
+.text_area_form {
+  height: 46vh !important;
+  width: 45vw !important;
+}
+
+.table_section {
+  width: 70%;
+  border-radius: 15px;
+  margin-top: 1rem;
+}
+
+.left_section {
+  height: 98%;
+  margin-right: 2rem;
+  width: 76%;
+  max-height: 98%;
+  min-height: 98%;
+  max-width: 98%;
+  overflow: auto;
+  border-radius: 15px;
+}
+
+.table_form {
+  display: flex;
+  width: 96vw;
+  height: 65vh;
+}
+
+.table_style {
+  border-radius: 20px;
+  height: 86.75%;
+  background-color: transparent !important;
+}
+
+.mat-paginator-sticky {
+  bottom: 0px;
+  position: sticky;
+  z-index: 10;
+  border-radius: 15px;
+}
+
+.mat-header-row{
+  background: white;
+}
+
+.screen{
+  transform: translateY(-1.5%);
+}

@@ -1,0 +1,58 @@
+<div class="block">
+  <div class="text_area_row">
+    <div class="text_area_block">
+      <div class="outline form_sheet mat-elevation-z2">
+        <div class="collection">
+          <p class="p_style">NIIS Troubleshooting</p>
+          <div>
+            <mat-form-field appearance="outline" class="outside_input_form">
+              <mat-label>Environment</mat-label>
+              <mat-select>
+                <mat-option *ngFor="let environment of environments" [value]="environment">{{environment}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="outline" class="outside_input_form">
+              <mat-label>Request</mat-label>
+              <mat-select [(value)]="selectedRequest" (selectionChange)="getVariables()">
+                <mat-option *ngFor="let request of requests" [value]=request>{{request}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="outline" class="outside_input_form">
+              <mat-label>Institution Id</mat-label>
+              <input matInput placeholder="" value="">
+            </mat-form-field>
+          </div>
+          <div *ngFor="let variable of selectedVariables ; let i = index;trackBy: trackByIdx">
+            <mat-form-field appearance="outline" class="outside_input_form">
+              <mat-label>{{variable}}</mat-label>
+              <mat-select *ngIf="variable === 'integrationName'" [(value)]="selectedConnector">
+                <mat-option *ngFor="let connector of connectors" [value]="connector">{{connector}}</mat-option>
+              </mat-select>
+              <input *ngIf="variable !== 'integrationName'" matInput placeholder="" [(ngModel)]="optionsResponse[requests.indexOf(selectedRequest)].variables[i]">
+            </mat-form-field>
+          </div>
+          <div class="buttons">
+            <button class="button_style outside_button" mat-stroked-button>
+              <span>Cancel</span>
+            </button>
+            <button color="primary" class="submit button_style outside_button" mat-raised-button>
+              <span>Submit</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text_area_row">
+    <div class="text_area_block">
+      <mat-form-field class="text_area_form" appearance="outline">
+        <mat-label>NIIS Response</mat-label>
+        <textarea class="text_area_style" name="niisResponse" cols="60" rows="4" matInput></textarea>
+      </mat-form-field>
+    </div>
+  </div>
+</div>

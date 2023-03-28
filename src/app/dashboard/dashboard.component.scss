@@ -1,0 +1,133 @@
+/* DashboardComponent's private CSS styles */
+
+.text_area_style {
+  resize: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 100%;
+  max-height: 100%;
+  /*font-size-adjust: auto;*/
+}
+
+.text_area_form {
+  height: 32vh !important;
+  width: 37vw !important;
+}
+
+.center_input_form {
+  height: 9vh !important;
+  width: 18vw !important;
+  margin-left: 1vw;
+}
+
+.outside_input_form {
+  height: 9vh !important;
+  width: 37vw !important;
+}
+
+textarea{
+  height: 30vh;
+  width: 27.5vw;
+}
+
+.outline {
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #cccccc;
+}
+
+.p_style {
+  font-size: 2vh;
+}
+
+.text_area_block {
+  text-align: center;
+  margin-right: 1rem;
+  margin-top: 0.8rem;
+}
+
+.text_area_row {
+ /* display: float; */
+}
+
+.button_style {
+  text-align: center;
+  font-size: calc(8px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  background-color: yellowgreen !important;
+  color: white !important;
+}
+
+.center_button {
+  height: 6vh;
+  width: 20vw;
+}
+
+.top_button {
+  transform: translateY(80%);
+}
+
+.top_button_bottom {
+  transform: translateY(40%);
+}
+
+.bottom_button {
+ transform: translateY(30%);
+}
+
+.outside_button {
+  height: 6vh;
+  width: 18vw;
+}
+
+.i_style {
+ margin-right: 1rem;
+}
+
+.block {
+  display:flex;
+  transform: translateY(-1%);
+}
+
+.center_console {
+  width: 20vw;
+  height: 46vh;
+  transform: translateY(2%);
+  border-radius: 15px;
+}
+
+.select_style {
+  /*transform: translateY(0%);
+  font-size: 1.8vh;
+  margin-left: 1.2rem;
+  height: 3vh;
+  margin-top: 1.1rem; */
+}
+
+.host_style{
+  /*display: float;*/
+}
+
+.mat-select-content{
+  width:100px;
+  background-color: red;
+  font-size: 10px;
+}
+
+.header_style {
+  margin-left: 8.5vw;
+  margin-top: 2vh;
+}
+
+.center_console_div {
+  transform: translateY(10%);
+}
+
+.center_console_section {
+  transform: translateY(5%);
+}
