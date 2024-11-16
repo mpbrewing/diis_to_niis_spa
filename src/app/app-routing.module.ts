@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { TroubleshootComponent } from './troubleshoot/troubleshoot.component';
 import { HistoryComponent } from './history/history.component';
 import { OperationsComponent } from './operations/operations.component';
+import {ValidateComponent} from "./validate/validate.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'history', component: HistoryComponent },
   { path: 'operations', component: OperationsComponent },
   { path: 'troubleshoot', component: TroubleshootComponent },
+  { path: 'validate', component: ValidateComponent },
 ];
 
 @NgModule({

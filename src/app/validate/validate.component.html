@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><div class="block">
+  <div class="text_area_row">
+    <div class="text_area_block">
+      <div class="outline form_sheet mat-elevation-z2">
+        <div class="collection">
+          <p class="p_style">NIIS Troubleshooting</p>
+          <div>
+            <mat-form-field appearance="outline" class="outside_input_form">
+              <mat-label>Request Form</mat-label>
+              <mat-select>
+                <mat-option *ngFor="let requestForm of requestForms" [value]="requestForm">{{requestForm}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div>
+           <!-- <mat-form-field appearance="outline" class="outside_input_form">
+              <mat-label>Request Messages</mat-label>
+              <input matInput placeholder="" value="">
+            </mat-form-field>-->
+            <mat-chip-listbox selectable multiple class="outside_input_form list_box_style" aria-label="Fish selection">
+              <mat-chip-option  *ngFor="let responseMessage of responseMessages" [value]="responseMessage">{{responseMessage}}</mat-chip-option>
+            </mat-chip-listbox>
+          </div>
+          <div>
+            <mat-form-field appearance="outline" class="outside_input_form csv_form">
+              <mat-label>hostId(s)</mat-label>
+              <input matInput placeholder="" value="">
+              <button class="button_style csv_button" mat-raised-button>
+                <span class="material-symbols-outlined">csv</span>
+              </button>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="outline" class="outside_input_form">
+              <mat-label>hostAccountId(s)</mat-label>
+              <input matInput placeholder="" value="">
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="outline" class="outside_input_form">
+              <mat-label>Primary Connector</mat-label>
+              <mat-select>
+                <mat-option *ngFor="let primaryConnector of primaryConnectors" [value]="primaryConnector">{{primaryConnector}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="outline" class="outside_input_form">
+              <mat-label>Test Connector</mat-label>
+              <mat-select>
+                <mat-option *ngFor="let testConnector of testConnectors" [value]="testConnector">{{testConnector}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="outline" class="outside_input_form">
+              <mat-label>Response Message</mat-label>
+              <mat-select>
+                <mat-option *ngFor="let responseMessage of responseMessages" [value]="responseMessage">{{responseMessage}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="buttons">
+            <button class="button_style outside_button" mat-stroked-button>
+              <span>Cancel</span>
+            </button>
+            <button color="primary" class="submit button_style outside_button" mat-raised-button>
+              <span>Submit</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="table_section table_sec_right">
+    <mat-form-field class="text_area_form" appearance="outline">
+      <mat-label>Primary Connector Response</mat-label>
+      <textarea class="text_area_style" name="primaryConnectorResponse" cols="60" rows="4" matInput></textarea>
+    </mat-form-field>
+    <mat-form-field class="text_area_form" appearance="outline">
+      <mat-label>Test Connector Response</mat-label>
+      <textarea class="text_area_style" name="testConnectorResponse" cols="60" rows="4" matInput></textarea>
+    </mat-form-field>
+    <button class="button_style outside_button" mat-raised-button>
+      <span>Download Comparison Report</span>
+    </button>
+  </div>
+</div>

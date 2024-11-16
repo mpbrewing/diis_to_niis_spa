@@ -27,6 +27,8 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 import {DialogComponent} from "./operations/dialog/dialog.component";
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatIconModule} from "@angular/material/icon";
+import {ValidateComponent} from "./validate/validate.component";
+import {MatChipsModule} from "@angular/material/chips";
 
 
 @NgModule({
@@ -50,6 +52,7 @@ import {MatIconModule} from "@angular/material/icon";
     MatDialogModule,
     MatIconModule,
     ReactiveFormsModule,
+    MatChipsModule,
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
@@ -65,6 +68,7 @@ import {MatIconModule} from "@angular/material/icon";
     HistoryComponent,
     OperationsComponent,
     TroubleshootComponent,
+    ValidateComponent,
     DialogComponent
   ],
   bootstrap: [ AppComponent ]

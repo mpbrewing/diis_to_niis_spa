@@ -1,0 +1,106 @@
+.block {
+  display:flex;
+
+  transform: translateY(-3.5%);
+}
+
+.text_area_row {
+  display: flex;
+}
+
+.text_area_block {
+  text-align: center;
+  margin-right: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_sheet {
+  height: 93.9vh;
+  width: 36.3vw;
+  display: flow;
+  margin-top: 2rem;
+}
+
+.list_box_style {
+  transform: translateX(10%);
+}
+
+.collection {
+  transform: translateY(7%);
+}
+
+.p_style {
+  font-size: 2vh;
+  margin-top: 2rem;
+}
+
+.outline {
+  border-radius: 10px;
+}
+
+.outside_input_form {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 5vh !important;
+  width: 30vw !important;
+}
+
+.csv_form {
+  margin-bottom: 5rem;
+}
+
+.button_style {
+  text-align: center;
+  font-size: calc(3px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  /*transform: translate(260%,740%);*/
+
+}
+
+.buttons {
+  margin-left: 36%;
+}
+
+.submit {
+  //background-color: #1E90FF;
+  color: white;
+}
+
+.outside_button {
+  height: 5vh;
+  width: 18vw;
+}
+
+.csv_button {
+  height: 5vh;
+  width: 5vw;
+}
+
+.table_section {
+  width: 70%;
+  border-radius: 15px;
+  margin-top: 1rem;
+}
+
+.table_sec_right{
+  transform: translate(2%,2%)
+}
+
+.text_area_form {
+  height: 40vh !important;
+  width: 50vw !important;
+}
+
+.text_area_style {
+  resize: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 100%;
+  max-height: 100%;
+  /*font-size-adjust: auto;*/
+}
